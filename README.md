@@ -1,4 +1,69 @@
-# Customer-shopping-behaviour-project
+# Deutsch
+
+**Analyse des Einkaufsverhaltens von Kunden**
+
+**Projektüberblick**
+
+Dieses Projekt analysiert das Einkaufsverhalten von Kunden anhand von Daten aus rund 3.900 Kaufvorgängen, um aussagekräftige Muster und Erkenntnisse zu gewinnen, die strategische Geschäftsentscheidungen unterstützen. Im Mittelpunkt der Analyse stehen das Verständnis des Kundenverhaltens, die Faktoren, die Kaufentscheidungen beeinflussen, sowie Möglichkeiten zur Optimierung von Marketing- und Vertriebsstrategien.
+
+**Geschäftsziel**
+
+Unternehmen haben oft Schwierigkeiten, Kundenpräferenzen, Ausgabegewohnheiten und Kauf-Trends zu verstehen. Ziel dieses Projekts ist es:
+
+**Wichtige Einkaufsmuster zu identifizieren**
+- Das Kaufverhalten verschiedener Kundensegmente zu analysieren
+- Umsetzbare Erkenntnisse zur Steigerung der Vertriebsleistung und Verbesserung des Kundenerlebnisses zu liefern
+
+**Datensatzgröße**: 
+- 3.900 Transaktionen | 
+- Typ: Einzelhandel / Kundekaufdaten
+
+**Wichtige Merkmale**
+
+- Demografische Kundendaten
+- Kaufbetrag
+- Produktkategorien
+- Einkaufshäufigkeit
+- Transaktionstrends
+
+**Methodik**
+
+- Datenbereinigung und Vorverarbeitung
+- Explorative Datenanalyse (EDA)
+- Aggregation und Trendanalyse
+- Visualisierung wichtiger Kennzahlen, wie z. B.:
+- Umsatzverteilung
+- Performance der Produktkategorien
+- Umsatzbeitrag der Kunden
+- Kauftrends im Zeitverlauf
+
+**Wichtige Erkenntnisse**
+
+- Eine kleine Gruppe von Kunden trägt einen erheblichen Teil zum Gesamtumsatz bei
+- Bestimmte Produktkategorien schneiden durchgehend besser ab als andere
+- Das Ausgabeverhalten variiert je nach Kundensegment
+- Deutliche Trends helfen dabei, Chancen für gezieltes Marketing und Personalisierung zu erkennen
+
+**Geschäftsempfehlungen**
+
+- Marketingmaßnahmen auf umsatzstarke Kundensegmente konzentrieren
+- Erfolgreiche Produktkategorien gezielt bewerben
+- Erkenntnisse zur Personalisierung von Angeboten und zur Kundenbindung nutzen
+- Datengestützte Strategien zur Optimierung von Lagerbestand und Preisgestaltung anwenden
+
+**Tools & Technologien**
+
+- Python
+- Pandas, NumPy
+- Matplotlib / Seaborn
+- Jupyter Notebook
+- Datenvisualisierung & Reporting
+
+**Fazit**
+
+Dieses Projekt zeigt, wie die Analyse des Einkaufsverhaltens wertvolle Erkenntnisse liefern kann, die fundiertere Geschäftsentscheidungen ermöglichen. Durch die Nutzung von Transaktionsdaten können Unternehmen die Kundenbindung stärken, Produktstrategien optimieren und den Gesamtumsatz steigern.
+
+# English
 
 **Customer Shopping Behavior Analysis**
 
@@ -10,7 +75,8 @@ The analysis focuses on understanding how customers shop, what drives purchasing
 **Business Objective**
 
 Businesses often struggle to understand customer preferences, spending habits, and purchasing trends.
-The objective of this project is to:
+
+**The objective of this project is to:**
   - Identify key shopping patterns
   - Analyze purchasing behavior across different customer segments
   - Provide actionable insights to improve sales performance and customer experience
