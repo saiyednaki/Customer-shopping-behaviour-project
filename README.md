@@ -15,7 +15,7 @@ Unternehmen haben oft Schwierigkeiten, Kundenpräferenzen, Ausgabegewohnheiten u
 - Umsetzbare Erkenntnisse zur Steigerung der Vertriebsleistung und Verbesserung des Kundenerlebnisses zu liefern
 
 **Datensatzgröße**: 
-- 3.900 Transaktionen | 
+- 3.900 Transaktionen 
 - Typ: Einzelhandel / Kundekaufdaten
 
 **Wichtige Merkmale**
