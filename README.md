@@ -1,4 +1,4 @@
-# Customer Shopping Behaviour Analysis | Customer Segmentation & Sales Intelligence
+# What Drives Customer Shopping Behaviour? | Retail Analytics
 
 # Deutsch
 
