@@ -1,126 +1,425 @@
-# Analyse des Einkaufsverhaltens von Kunden
+# Customer Shopping Behaviour Analysis | Customer Segmentation & Sales Intelligence
 
 # Deutsch
 
-**Projektüberblick**
+# Analyse des Kaufverhaltens | Kundensegmentierung & Sales Intelligence
 
-Dieses Projekt analysiert das Einkaufsverhalten von Kunden anhand von Daten aus rund 3.900 Kaufvorgängen, um aussagekräftige Muster und Erkenntnisse zu gewinnen, die strategische Geschäftsentscheidungen unterstützen. Im Mittelpunkt der Analyse stehen das Verständnis des Kundenverhaltens, die Faktoren, die Kaufentscheidungen beeinflussen, sowie Möglichkeiten zur Optimierung von Marketing- und Vertriebsstrategien.
+## Überblick
 
-**Geschäftsziel**
+Wie können Unternehmen das Kaufverhalten ihrer Kunden besser verstehen, um den Absatz zu steigern, die Kundenbindung zu verbessern und den Umsatz zu maximieren?
 
-Unternehmen haben oft Schwierigkeiten, Kundenpräferenzen, Ausgabegewohnheiten und Kauf-Trends zu verstehen. Ziel dieses Projekts ist es:
+Dieses Projekt analysiert rund **3.900 Einzelhandelstransaktionen**, um Kaufmuster, Produktpräferenzen und Umsatztrends aufzudecken. Mithilfe von **Python** werden die Rohdaten der Transaktionen in praxisrelevante Erkenntnisse umgewandelt, die als Grundlage für Marketingstrategien, Kundensegmentierung, Bestandsplanung und Vertriebsoptimierung dienen.
 
-**Wichtige Einkaufsmuster zu identifizieren**
-- Das Kaufverhalten verschiedener Kundensegmente zu analysieren
-- Umsetzbare Erkenntnisse zur Steigerung der Vertriebsleistung und Verbesserung des Kundenerlebnisses zu liefern
+Anstatt sich lediglich auf eine explorative Datenanalyse zu beschränken, zeigt das Projekt auf, wie Kundendaten genutzt werden können, um **datengestützte Geschäftsentscheidungen** zu treffen.
 
-**Datensatzgröße**: 
-- 3.900 Transaktionen 
-- Typ: Einzelhandel / Kundekaufdaten
+---
 
-**Wichtige Merkmale**
+# Geschäftliche Herausforderung
+
+Einzelhandelsunternehmen erfassen täglich Tausende von Kundentransaktionen. Ohne eine strukturierte Analyse ist es jedoch schwierig, besonders wertvolle Kunden zu identifizieren, das Kaufverhalten zu verstehen oder Produktstrategien zu optimieren.
+
+Das Unternehmen benötigte Antworten auf zentrale Fragen wie:
+
+- Welche Kunden erzielen den höchsten Umsatz?
+- Welche Produktkategorien schneiden am besten ab?
+- Wie unterscheiden sich die Kaufmuster zwischen verschiedenen Kundensegmenten?
+- Welche Kunden sollten gezielt mit Maßnahmen zur Kundenbindung angesprochen werden?
+- Wie lassen sich Marketingmaßnahmen personalisieren?
+- Für welche Produkte sollte verstärkt in den Lagerbestand investiert werden?
+
+Ohne diese Erkenntnisse riskieren Unternehmen ineffiziente Marketingkampagnen, eine geringere Kundenbindung und entgangene Umsatzchancen. ---
+
+# Lösung
+
+Mithilfe von **Python** wandelt dieses Projekt Transaktionsdaten in aussagekräftige Business Intelligence um, indem es:
+
+- Kundentransaktionsdaten bereinigt und aufbereitet
+- Eine explorative Datenanalyse (EDA) durchführt
+- Kaufmuster in verschiedenen Kundensegmenten identifiziert
+- Die Leistung von Produktkategorien bewertet
+- Den Umsatzbeitrag der Kunden analysiert
+- Wichtige Geschäftskennzahlen visualisiert
+- Handlungsempfehlungen für das Unternehmenswachstum liefert
+
+---
+
+# Geschäftsziele
+
+Die Analyse unterstützt Unternehmen dabei:
+
+- Das Kaufverhalten der Kunden zu verstehen
+- Hochwertige Kundensegmente zu identifizieren
+- Die Leistung von Produktkategorien zu bewerten
+- Strategien zur Kundenbindung zu verbessern
+- Die Bestandsplanung zu unterstützen
+- Datengestützte Marketingentscheidungen zu ermöglichen
+
+---
+
+# Datensatz
+
+- **Datensatzgröße:** ca. 3.900 Kundentransaktionen
+- **Branche:** Einzelhandel
+- **Analysetyp:** Analyse des Kundenverhaltens (Customer Behaviour Analytics)
+
+### Wichtige Attribute
 
 - Demografische Kundendaten
 - Kaufbetrag
 - Produktkategorien
-- Einkaufshäufigkeit
-- Transaktionstrends
+- Kaufhäufigkeit
+- Transaktionshistorie
+- Verkaufstrends
 
-**Methodik**
+---
 
-- Datenbereinigung und Vorverarbeitung
-- Explorative Datenanalyse (EDA)
-- Aggregation und Trendanalyse
-- Visualisierung wichtiger Kennzahlen, wie z. B.:
-- Umsatzverteilung
-- Performance der Produktkategorien
-- Umsatzbeitrag der Kunden
-- Kauftrends im Zeitverlauf
+# Analyse-Workflow
 
-**Wichtige Erkenntnisse**
+## Schritt 1 — Datenaufbereitung
 
-- Eine kleine Gruppe von Kunden trägt einen erheblichen Teil zum Gesamtumsatz bei
-- Bestimmte Produktkategorien schneiden durchgehend besser ab als andere
-- Das Ausgabeverhalten variiert je nach Kundensegment
-- Deutliche Trends helfen dabei, Chancen für gezieltes Marketing und Personalisierung zu erkennen
+- Datenbereinigung
+- Umgang mit fehlenden Werten
+- Datenvalidierung
+- Aufbereitung von Merkmalen (Features)
 
-**Geschäftsempfehlungen**
+---
 
-- Marketingmaßnahmen auf umsatzstarke Kundensegmente konzentrieren
-- Erfolgreiche Produktkategorien gezielt bewerben
-- Erkenntnisse zur Personalisierung von Angeboten und zur Kundenbindung nutzen
-- Datengestützte Strategien zur Optimierung von Lagerbestand und Preisgestaltung anwenden
+## Schritt 2 — Explorative Datenanalyse
 
-**Tools & Technologien**
+- Demografische Kundendaten
+- Kaufverhalten
+- Verteilung der Ausgaben
+- Analyse der Produktkategorien
+
+---
+
+## Schritt 3 — Kundenanalyse
+
+- Identifizierung hochwertiger Kunden
+- Analyse des Umsatzbeitrags
+- Kundensegmentierung
+- Analyse der Kaufhäufigkeit
+
+---
+
+## Schritt 4 — Analyse der Produktleistung
+
+- Leistung der Produktkategorien
+- Verteilung der Verkäufe
+- Umsatzbeitrag
+- Produktbeliebtheit
+
+---
+
+## Schritt 5 — Geschäftserkenntnisse
+
+Generierung von Empfehlungen zur Unterstützung von:
+
+- Marketingstrategie
+- Kundenbindung
+- Produktplanung
+- Vertriebsoptimierung
+
+---
+
+# Verwendete Technologien
 
 - Python
-- Pandas, NumPy
-- Matplotlib / Seaborn
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
 - Jupyter Notebook
-- Datenvisualisierung & Reporting
 
-**Fazit**
+---
 
-Dieses Projekt zeigt, wie die Analyse des Einkaufsverhaltens wertvolle Erkenntnisse liefern kann, die fundiertere Geschäftsentscheidungen ermöglichen. Durch die Nutzung von Transaktionsdaten können Unternehmen die Kundenbindung stärken, Produktstrategien optimieren und den Gesamtumsatz steigern.
+# Gewonnene Geschäftserkenntnisse
+
+Die Analyse liefert Erkenntnisse zu:
+
+- Hochwertigen Kundensegmenten
+- Kaufverhalten der Kunden
+- Leistung der Produktkategorien
+- Umsatzverteilung
+- Verkaufstrends
+- Kaufhäufigkeit
+- Umsatzbeitrag der Kunden
+
+---
+
+# Geschäftlicher Mehrwert
+
+Die durch dieses Projekt gewonnenen Erkenntnisse helfen Unternehmen:
+
+- Marketingmaßnahmen auf hochwertige Kunden zu konzentrieren
+- Die Kundenbindung durch personalisierte Kampagnen zu verbessern
+- Die Bestandsplanung anhand der Produktnachfrage zu optimieren
+- Den Umsatz durch bessere Produktpositionierung zu steigern
+- Strategische Geschäftsentscheidungen zu unterstützen mit Daten
+
+---
+
+# Angewandte Kompetenzen
+
+- Business Intelligence
+- Customer Analytics
+- Kundensegmentierung
+- Sales Analytics
+- Explorative Datenanalyse (EDA)
+- Python
+- Datenvisualisierung
+- Statistische Analyse
+- Data Storytelling
+- Business Reporting
+- Entscheidungsunterstützung
+
+---
+
+# Wichtigste Ergebnisse
+
+✔ Identifizierung wertvoller Kundensegmente
+
+✔ Bewertung des Kaufverhaltens verschiedener Kundengruppen
+
+✔ Analyse der Performance von Produktkategorien
+
+✔ Erarbeitung umsetzbarer Handlungsempfehlungen
+
+✔ Demonstration einer End-to-End-Analyse des Kundenverhaltens mittels Python
+
+---
+
+# Struktur des Repositorys
+
+```text
+Customer-Shopping-Behaviour-Analysis/
+│
+├── Dataset/
+├── Notebooks/
+├── Images/
+├── Reports/
+└── README.md
+```
+
+---
+
+# Kontakt
+
+**Naki Saiyed**
+
+**Business Intelligence & Data Analyst**
+
+- 💼 LinkedIn: https://linkedin.com/in/saiyed-naki
+- 💻 GitHub: https://github.com/saiyednaki
 
 # English
 
-**Customer Shopping Behavior Analysis**
+## Overview
 
-**Project Overview**
+How can businesses better understand customer purchasing behaviour to increase sales, improve customer retention, and maximise revenue?
 
-This project analyzes customer shopping behavior using data from approximately 3,900 purchase records to uncover meaningful patterns and insights that support strategic business decision-making.
-The analysis focuses on understanding how customers shop, what drives purchasing decisions, and how businesses can optimize marketing and sales strategies.
+This project analyses approximately **3,900 retail transactions** to uncover customer purchasing patterns, product preferences, and revenue trends. Using **Python**, the analysis transforms raw transactional data into actionable business insights that support marketing strategy, customer segmentation, inventory planning, and sales optimisation.
 
-**Business Objective**
+Rather than focusing solely on exploratory data analysis, the project demonstrates how customer data can be leveraged to support **data-driven business decision-making**.
 
-Businesses often struggle to understand customer preferences, spending habits, and purchasing trends.
+---
 
-**The objective of this project is to:**
-  - Identify key shopping patterns
-  - Analyze purchasing behavior across different customer segments
-  - Provide actionable insights to improve sales performance and customer experience
+# Business Problem
 
-**Dataset**
-Size: 3,900 transactions
-Type: Retail / customer purchase data
+Retail businesses collect thousands of customer transactions every day. However, without structured analysis, it is difficult to identify high-value customers, understand purchasing behaviour, or optimise product strategies.
 
-**Key Attributes**
-  - Customer demographics
-  - Purchase amount
-  - Product categories
-  - Shopping frequency
-  - Transaction trends
+The business needed answers to key questions such as:
 
-**Methodology**
-  - Data cleaning and preprocessing
-  - Exploratory Data Analysis (EDA)
-  - Aggregation and trend analysis
-  - Visualization of key metrics such as:
-  - Sales distribution
-  - Category performance
-  - Customer contribution to revenue
-  - Purchase trends over time
+- Which customers generate the highest revenue?
+- Which product categories perform best?
+- How do purchasing patterns differ across customer segments?
+- Which customers should be targeted for retention campaigns?
+- How can marketing efforts be personalised?
+- Which products should receive greater inventory investment?
 
-**Key Insights**
-  - A small group of customers contributes a significant portion of total revenue
-  - Certain product categories consistently outperform others
-  - Spending behavior varies across customer segments
-  - Clear trends help identify opportunities for targeted marketing and personalization
+Without these insights, businesses risk inefficient marketing campaigns, lower customer retention, and missed revenue opportunities.
 
-**Business Recommendations**
-  - ocus marketing efforts on high-value customer segments
-  - Promote top-performing product categories
-  - Use insights to personalize offers and improve customer retention
-  - Apply data-driven strategies for inventory and pricing optimization
+---
 
-**Tools & Technologies**
-  - Python
-  - Pandas, NumPy
-  - Matplotlib / Seaborn
-  - Jupyter Notebook
-  - Data visualization & reporting
+# Solution
 
-**Conclusion**
+Using **Python**, this project transforms transactional data into meaningful business intelligence by:
 
-This project demonstrates how analyzing customer shopping behavior can uncover valuable insights that drive smarter business decisions. By leveraging transaction-level data, companies can enhance customer engagement, optimize product strategies, and increase overall revenue.
+- Cleaning and preparing customer transaction data
+- Performing exploratory data analysis (EDA)
+- Identifying purchasing patterns across customer segments
+- Evaluating product category performance
+- Analysing customer contribution to revenue
+- Visualising key business metrics
+- Delivering actionable recommendations for business growth
+
+---
+
+# Business Objectives
+
+The analysis helps organisations:
+
+- Understand customer purchasing behaviour
+- Identify high-value customer segments
+- Evaluate product category performance
+- Improve customer retention strategies
+- Support inventory planning
+- Enable data-driven marketing decisions
+
+---
+
+# Dataset
+
+- **Dataset Size:** ~3,900 customer transactions
+- **Industry:** Retail
+- **Analysis Type:** Customer Behaviour Analytics
+
+### Key Attributes
+
+- Customer demographics
+- Purchase amount
+- Product categories
+- Shopping frequency
+- Transaction history
+- Sales trends
+
+---
+
+# Analysis Workflow
+
+## Step 1 — Data Preparation
+
+- Data cleaning
+- Missing value handling
+- Data validation
+- Feature preparation
+
+---
+
+## Step 2 — Exploratory Data Analysis
+
+- Customer demographics
+- Purchase behaviour
+- Spending distribution
+- Product category analysis
+
+---
+
+## Step 3 — Customer Analytics
+
+- High-value customer identification
+- Revenue contribution analysis
+- Customer segmentation
+- Shopping frequency analysis
+
+---
+
+## Step 4 — Product Performance Analysis
+
+- Category performance
+- Sales distribution
+- Revenue contribution
+- Product popularity
+
+---
+
+## Step 5 — Business Insights
+
+Generate recommendations that support:
+
+- Marketing strategy
+- Customer retention
+- Product planning
+- Sales optimisation
+
+---
+
+# Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Jupyter Notebook
+
+---
+
+# Business Insights Generated
+
+The analysis provides insights into:
+
+- High-value customer segments
+- Customer purchasing behaviour
+- Product category performance
+- Revenue distribution
+- Sales trends
+- Shopping frequency
+- Customer contribution to revenue
+
+---
+
+# Business Value
+
+The insights generated through this project help organisations:
+
+- Focus marketing efforts on high-value customers
+- Improve customer retention through personalised campaigns
+- Optimise inventory planning using product demand
+- Increase sales through better product positioning
+- Support strategic business decisions with data
+
+---
+
+# Skills Demonstrated
+
+- Business Intelligence
+- Customer Analytics
+- Customer Segmentation
+- Sales Analytics
+- Exploratory Data Analysis (EDA)
+- Python
+- Data Visualisation
+- Statistical Analysis
+- Data Storytelling
+- Business Reporting
+- Decision Support
+
+---
+
+# Key Outcomes
+
+✔ Identified high-value customer segments
+
+✔ Evaluated purchasing behaviour across customer groups
+
+✔ Analysed product category performance
+
+✔ Delivered actionable business recommendations
+
+✔ Demonstrated end-to-end customer analytics using Python
+
+---
+
+# Repository Structure
+
+```text
+Customer-Shopping-Behaviour-Analysis/
+│
+├── Dataset/
+├── Notebooks/
+├── Images/
+├── Reports/
+└── README.md
+```
+
+---
+
+# Connect With Me
+
+**Naki Saiyed**
+
+**Business Intelligence & Data Analyst**
+
+- 💼 LinkedIn: https://linkedin.com/in/saiyed-naki
+- 💻 GitHub: https://github.com/saiyednaki
